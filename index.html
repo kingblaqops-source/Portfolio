@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Opemipo — Computer Engineer & Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== NAV ===== -->
+  <nav class="nav" id="nav">
+    <div class="nav__brand">OP<span class="dot">.</span></div>
+    <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav__links" id="navLinks">
+      <li><a href="#home" class="nav__link" data-tab="01">home</a></li>
+      <li><a href="#about" class="nav__link" data-tab="02">about</a></li>
+      <li><a href="#skills" class="nav__link" data-tab="03">skills</a></li>
+      <li><a href="#projects" class="nav__link" data-tab="04">projects</a></li>
+      <li><a href="#contact" class="nav__link" data-tab="05">contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <!-- ===== HERO ===== -->
+    <section id="home" class="hero">
+      <div class="hero__inner">
+        <p class="eyebrow">// portfolio.init()</p>
+        <div class="terminal" id="terminal">
+          <div class="terminal__bar">
+            <span class="terminal__dot terminal__dot--red"></span>
+            <span class="terminal__dot terminal__dot--yellow"></span>
+            <span class="terminal__dot terminal__dot--green"></span>
+            <span class="terminal__title">kingblaqops@gmail.com</span>
+          </div>
+          <div class="terminal__body">
+            <p class="terminal__line"><span class="prompt">$</span> whoami</p>
+            <p class="terminal__output" id="typedName"></p>
+            <p class="terminal__line" id="line2" style="opacity:0">
+              <span class="prompt">$</span> cat role.txt
+            </p>
+            <p class="terminal__output" id="typedRole" style="opacity:0"></p>
+            <p class="terminal__line" id="line3" style="opacity:0">
+              <span class="prompt">$</span> <span class="cursor-blink">_</span>
+            </p>
+          </div>
+        </div>
+        <div class="hero__cta">
+          <a href="#projects" class="btn btn--primary">view projects</a>
+          <a href="#contact" class="btn btn--ghost">get in touch</a>
+        </div>
+      </div>
+      <div class="hero__scroll">scroll<span class="hero__scroll-bar"></span></div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section id="about" class="section">
+      <p class="section__tab">02 / about</p>
+      <h2 class="section__title"> Oyedeji Opemipo</h2>
+      <div class="about__grid">
+        <p class="about__text">
+          I'm a computer engineering student who likes taking systems apart to see how they
+          actually work — then putting them back together better. My focus spans
+          <strong>software development</strong>, <strong>graphics programming</strong>, and
+          <strong>video editing</strong>, with a habit of learning by building real things
+          rather than just reading about them.
+        </p>
+        <ul class="about__facts">
+          <li><span class="about__facts-label">based in</span>Nigeria</li>
+          <li><span class="about__facts-label">studying</span>Computer Engineering</li>
+          <li><span class="about__facts-label">currently</span>Building this site &amp; side projects</li>
+          <li><span class="about__facts-label">also into</span>GTA V, hardware tinkering</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== SKILLS ===== -->
+    <section id="skills" class="section">
+      <p class="section__tab">03 / skills</p>
+      <h2 class="section__title">// what I work with</h2>
+      <div class="skills__grid" id="skillsGrid">
+        <div class="skill-card">
+          <p class="skill-card__label">lang</p>
+          <h3>Programming</h3>
+          <p>HTML, CSS, JavaScript — building toward systems &amp; graphics-level languages.</p>
+        </div>
+        <div class="skill-card">
+          <p class="skill-card__label">tool</p>
+          <h3>Graphics &amp; Editing</h3>
+          <p>Video editing workflows and an interest in real-time graphics programming.</p>
+        </div>
+        <div class="skill-card">
+          <p class="skill-card__label">sys</p>
+          <h3>Hardware &amp; Troubleshooting</h3>
+          <p>Comfortable diagnosing driver, GPU, and performance issues at a system level.</p>
+        </div>
+        <div class="skill-card">
+          <p class="skill-card__label">flow</p>
+          <h3>Version Control</h3>
+          <p>Git &amp; GitHub for tracking work and shipping projects like this one.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROJECTS ===== -->
+    <section id="projects" class="section">
+      <p class="section__tab">04 / projects</p>
+      <h2 class="section__title">// things I've built</h2>
+      <div class="projects__grid" id="projectsGrid">
+
+        <article class="project-card">
+          <div class="project-card__head">
+            <span class="project-card__prompt">~/projects/portfolio</span>
+          </div>
+          <h3>This Portfolio</h3>
+          <p>A single-page site built from scratch with HTML, CSS &amp; JS — styled like a dev terminal.</p>
+          <div class="project-card__tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+          <a href="#" class="project-card__link">view project →</a>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card__head">
+            <span class="project-card__prompt">~/projects/coming-soon</span>
+          </div>
+          <h3>Project Two</h3>
+          <p>Placeholder — swap this for your next build. Add a link once it's live.</p>
+          <div class="project-card__tags"><span>TBD</span></div>
+          <a href="#" class="project-card__link">view project →</a>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card__head">
+            <span class="project-card__prompt">~/projects/coming-soon</span>
+          </div>
+          <h3>Project Three</h3>
+          <p>Placeholder — swap this for your next build. Add a link once it's live.</p>
+          <div class="project-card__tags"><span>TBD</span></div>
+          <a href="#" class="project-card__link">view project →</a>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section id="contact" class="section section--contact">
+      <p class="section__tab">05 / contact</p>
+      <h2 class="section__title">// let's talk</h2>
+      <p class="contact__text">
+        Open to internships, collaborations, or just talking shop about graphics
+        programming and weirdly specific GPU driver bugs.
+      </p>
+      <div class="contact__links">
+        <a href="mailto:you@example.com" class="contact__link">email →</a>
+        <a href="https://github.com/yourusername" class="contact__link">github →</a>
+        <a href="https://linkedin.com/in/yourusername" class="contact__link">linkedin →</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>built by Opemipo · 2026 · <span class="footer__mono">view-source enabled</span></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
